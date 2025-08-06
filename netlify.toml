@@ -1,0 +1,113 @@
+# Netlify Configuration for IA Performance Web
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+[build]
+  # Build command (not needed for static site, but keeping for future use)
+  command = "echo 'Static site - no build process needed'"
+  
+  # Directory with the deployable files
+  publish = "."
+  
+  # Functions directory (for future serverless functions)
+  functions = "functions"
+
+## Redirect rules
+[[redirects]]
+  # Redirect /home to /
+  from = "/home"
+  to = "/"
+  status = 301
+
+[[redirects]]
+  # Handle SPA routing (if needed in future)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+  conditions = {Role = ["admin"]}
+
+## Headers for security and performance
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    Content-Security-Policy = """
+      default-src 'self'; 
+      script-src 'self' 'unsafe-inline' https://cdnjs.cloudflare.com https://fonts.googleapis.com; 
+      style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://cdnjs.cloudflare.com; 
+      font-src 'self' https://fonts.gstatic.com https://cdnjs.cloudflare.com; 
+      img-src 'self' data: https:; 
+      connect-src 'self';
+    """
+    
+    # Performance headers
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.jpg"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+## Environment variables (example)
+[build.environment]
+  NODE_VERSION = "18"
+  HUGO_VERSION = "0.111.3"
+
+## Plugin configuration
+[[plugins]]
+  package = "@netlify/plugin-sitemap"
+  [plugins.inputs]
+    buildDir = "."
+
+## Context-specific build settings
+[context.production]
+  command = "echo 'Production build - optimizing assets'"
+
+[context.deploy-preview]
+  command = "echo 'Deploy preview build'"
+
+[context.branch-deploy]
+  command = "echo 'Branch deploy build'"
+
+## Form handling (if forms are added later)
+# [build.environment]
+#   FORMS = "true"
+
+## Split testing (A/B testing) configuration
+# [[redirects]]
+#   from = "/"
+#   to = "/index.html"
+#   status = 200
+#   conditions = {Role = ["admin"]}
+#   force = false
+
+## Custom domain settings
+# [build.environment]
+#   CUSTOM_DOMAIN = "ia-performance.com"
+
+## Analytics (if Netlify Analytics is used)
+# [build.environment]
+#   NETLIFY_ANALYTICS = "true"

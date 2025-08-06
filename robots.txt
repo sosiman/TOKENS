@@ -1,0 +1,114 @@
+# robots.txt para IA Performance Web
+# Este archivo indica a los motores de búsqueda qué pueden rastrear
+
+User-agent: *
+Allow: /
+
+# Permitir acceso a archivos CSS y JavaScript para mejor renderizado
+Allow: /styles.css
+Allow: /script.js
+Allow: /manifest.json
+
+# Permitir acceso a imágenes
+Allow: /images/
+
+# Bloquear archivos de configuración y desarrollo
+Disallow: /.git/
+Disallow: /.gitignore
+Disallow: /node_modules/
+Disallow: /package.json
+Disallow: /package-lock.json
+Disallow: /netlify.toml
+Disallow: /.env
+Disallow: /.env.local
+Disallow: /deploy.sh
+Disallow: /README.md
+Disallow: /LICENSE.md
+
+# Bloquear archivos temporales y de desarrollo
+Disallow: /*.log
+Disallow: /tmp/
+Disallow: /temp/
+Disallow: /.vscode/
+Disallow: /.idea/
+
+# Sitemap location
+Sitemap: https://ia-performance-web.netlify.app/sitemap.xml
+
+# Crawl-delay (opcional, en segundos)
+# Crawl-delay: 1
+
+# Configuraciones específicas por motor de búsqueda
+
+# Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+# Bing
+User-agent: Bingbot  
+Allow: /
+Crawl-delay: 1
+
+# Yandex
+User-agent: Yandex
+Allow: /
+
+# DuckDuckGo
+User-agent: DuckDuckBot
+Allow: /
+
+# Baidu (motor chino)
+User-agent: Baiduspider
+Allow: /
+
+# Social Media Crawlers
+User-agent: facebookexternalhit
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: LinkedInBot
+Allow: /
+
+User-agent: WhatsApp
+Allow: /
+
+# Archivers and analyzers
+User-agent: archive.org_bot
+Allow: /
+
+User-agent: ia_archiver
+Allow: /
+
+# Block malicious or unwanted bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: AhrefsSiteAudit
+Disallow: /
+
+# Block aggressive scrapers
+User-agent: *scrapy*
+Disallow: /
+
+User-agent: *spider*
+Disallow: /
+
+User-agent: *crawler*
+Disallow: /
+
+# Comentarios adicionales:
+# Este sitio web contiene análisis comparativo de modelos de IA
+# Se permite el rastreo completo para facilitar la indexación educativa
+# La información es pública y está destinada a ser compartida

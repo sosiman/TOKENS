@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rendimiento de Modelos de IA en Contextos Largos</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Análisis comparativo completo del rendimiento de modelos de IA (Gemini 2.5 Pro, Claude 4, Grok 4, ChatGPT-4o) en contextos largos. Comparación de velocidad, costos, limitaciones y recomendaciones por caso de uso.">
+    <meta name="keywords" content="inteligencia artificial, modelos de IA, análisis de rendimiento, Gemini 2.5 Pro, Claude 4, Grok 4, ChatGPT-4o, contextos largos, procesamiento de documentos, comparación IA, machine learning, NLP">
+    <meta name="author" content="Codex Developer">
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="es">
+    <meta name="revisit-after" content="7 days">
+    
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Rendimiento de Modelos de IA en Contextos Largos | Análisis Comparativo">
+    <meta property="og:description" content="Análisis detallado del rendimiento de Gemini 2.5 Pro, Claude 4, Grok 4 y ChatGPT-4o en procesamiento de documentos extensos">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="images/image1.png">
+    <meta property="og:image:alt" content="Gráfico comparativo de rendimiento de modelos de IA">
+    <meta property="og:site_name" content="IA Performance Analysis">
+    <meta property="og:locale" content="es_ES">
+    
+    <!-- Twitter Card Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Rendimiento de Modelos de IA en Contextos Largos">
+    <meta name="twitter:description" content="Análisis comparativo de Gemini, Claude, Grok y ChatGPT en procesamiento de documentos extensos">
+    <meta name="twitter:image" content="images/image1.png">
+    <meta name="twitter:image:alt" content="Análisis comparativo de modelos de IA">
+    
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#667eea">
+    <meta name="msapplication-TileColor" content="#667eea">
+    <meta name="msapplication-navbutton-color" content="#667eea">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="IA Performance">
+    <meta name="mobile-web-app-capable" content="yes">
+    
+    <!-- Manifest and Icons -->
+    <link rel="manifest" href="manifest.json">
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23667eea'><path d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/></svg>">
+    <link rel="apple-touch-icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23667eea'><path d='M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z'/></svg>">
+    
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    
+    <!-- Fonts and Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="nav-logo">
+                    <i class="fas fa-brain"></i>
+                    <span>IA Performance</span>
+                </div>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="#overview" class="nav-link">Resumen</a></li>
+                    <li><a href="#performance" class="nav-link">Rendimiento</a></li>
+                    <li><a href="#limitations" class="nav-link">Limitaciones</a></li>
+                    <li><a href="#recommendations" class="nav-link">Recomendaciones</a></li>
+                </ul>
+                <div class="hamburger" id="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">
+                        Rendimiento en <span class="gradient-text">Contextos Largos</span>
+                    </h1>
+                    <p class="hero-subtitle">
+                        Análisis comparativo de las capacidades de procesamiento de documentos extensos 
+                        en los principales modelos de IA generativa
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#performance" class="btn btn-primary">
+                            <i class="fas fa-chart-line"></i>
+                            Ver Análisis
+                        </a>
+                        <a href="#recommendations" class="btn btn-secondary">
+                            <i class="fas fa-lightbulb"></i>
+                            Recomendaciones
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="floating-cards">
+                        <div class="card-float card-1">
+                            <i class="fab fa-google"></i>
+                            <span>Gemini 2.5 Pro</span>
+                        </div>
+                        <div class="card-float card-2">
+                            <i class="fas fa-robot"></i>
+                            <span>Claude 4</span>
+                        </div>
+                        <div class="card-float card-3">
+                            <i class="fab fa-twitter"></i>
+                            <span>Grok 4</span>
+                        </div>
+                        <div class="card-float card-4">
+                            <i class="fas fa-comments"></i>
+                            <span>ChatGPT-4o</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Overview Section -->
+        <section id="overview" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Capacidades para Análisis de Documentos Extensos</h2>
+                    <p class="section-subtitle">
+                        Comparación detallada del rendimiento de los principales modelos de IA 
+                        en el procesamiento de contextos largos
+                    </p>
+                </div>
+
+                <div class="models-grid">
+                    <div class="model-card">
+                        <div class="model-icon gemini">
+                            <i class="fab fa-google"></i>
+                        </div>
+                        <h3>Gemini 2.5 Pro</h3>
+                        <div class="model-badge best">MEJOR CAPACIDAD</div>
+                        <p>Demuestra la mejor capacidad para procesar documentos largos, con usuarios reportando 
+                           análisis exitoso de archivos de hasta <strong>1,500 páginas</strong> o 
+                           <strong>30,000 líneas de código</strong>.</p>
+                        <div class="model-stats">
+                            <div class="stat">
+                                <span class="stat-value">1M</span>
+                                <span class="stat-label">Tokens</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">400K</span>
+                                <span class="stat-label">Degradación</span>
+                            </div>
+                        </div>
+                        <div class="performance-note">
+                            <i class="fas fa-exclamation-triangle"></i>
+                            El rendimiento comienza a degradarse alrededor de los 400,000 tokens
+                        </div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-icon claude">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <h3>Claude 4</h3>
+                        <div class="model-badge superior">COHERENCIA SUPERIOR</div>
+                        <p>Mantiene coherencia superior en conversaciones multi-turno largas y análisis 
+                           estructurado de documentos complejos. Su arquitectura de razonamiento híbrido 
+                           permite un mejor seguimiento lógico.</p>
+                        <div class="model-stats">
+                            <div class="stat">
+                                <span class="stat-value">200K</span>
+                                <span class="stat-label">Tokens</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Multi-turno</span>
+                                <span class="stat-label">Fortaleza</span>
+                            </div>
+                        </div>
+                        <div class="performance-note success">
+                            <i class="fas fa-check-circle"></i>
+                            Arquitectura de razonamiento híbrido superior
+                        </div>
+                    </div>
+
+                    <div class="model-card">
+                        <div class="model-icon grok">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h3>Grok 4</h3>
+                        <div class="model-badge good">BUEN RENDIMIENTO</div>
+                        <p>Ofrece buen rendimiento para contextos de hasta 256,000 tokens en API, 
+                           pero utiliza una estrategia de memoria centrada en información reciente 
+                           que puede limitar el recall profundo.</p>
+                        <div class="model-stats">
+                            <div class="stat">
+                                <span class="stat-value">256K</span>
+                                <span class="stat-label">Tokens API</span>
+                            </div>
+                            <div class="stat">
+                                <span class="stat-value">Reciente</span>
+                                <span class="stat-label">Memoria</span>
+                            </div>
+                        </div>
+                        <div class="performance-note warning">
+                            <i class="fas fa-info-circle"></i>
+                            Estrategia de memoria centrada en información reciente
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Performance Charts Section -->
+        <section id="performance" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Análisis de Rendimiento</h2>
+                    <p class="section-subtitle">
+                        Degradación del rendimiento y visualizaciones comparativas
+                    </p>
+                </div>
+
+                <div class="performance-content">
+                    <div class="charts-container">
+                        <div class="chart-item">
+                            <img src="images/image1.png" alt="Gráfico de rendimiento 1" class="chart-image">
+                            <div class="chart-caption">
+                                <h4>Análisis comparativo de capacidades</h4>
+                                <p>Comparación detallada de las capacidades de procesamiento de cada modelo</p>
+                            </div>
+                        </div>
+                        
+                        <div class="chart-item">
+                            <img src="images/image2.png" alt="Gráfico de rendimiento 2" class="chart-image">
+                            <div class="chart-caption">
+                                <h4>Métricas de rendimiento</h4>
+                                <p>Velocidad de procesamiento y eficiencia en contextos largos</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="degradation-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-chart-line-down"></i>
+                            </div>
+                            <h3>Degradación del Rendimiento</h3>
+                            <p>Los estudios muestran que <strong>todos los modelos experimentan degradación</strong> 
+                               a medida que se acercan a sus límites de contexto:</p>
+                            
+                            <div class="degradation-points">
+                                <div class="point">
+                                    <div class="point-icon middle">
+                                        <i class="fas fa-search"></i>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>"Lost in the middle"</h4>
+                                        <p>Los modelos tienden a perder información ubicada en partes intermedias de contextos largos</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="point">
+                                    <div class="point-icon effective">
+                                        <i class="fas fa-target"></i>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>Contexto efectivo</h4>
+                                        <p>El rendimiento óptimo ocurre típicamente entre 50-70% del límite máximo de tokens</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="point">
+                                    <div class="point-icon speed">
+                                        <i class="fas fa-tachometer-alt"></i>
+                                    </div>
+                                    <div class="point-content">
+                                        <h4>Tokens por segundo</h4>
+                                        <p>La velocidad de procesamiento disminuye significativamente con contextos más largos</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Limitations Section -->
+        <section id="limitations" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Limitaciones y Consideraciones Técnicas</h2>
+                    <p class="section-subtitle">
+                        Factores importantes a considerar al elegir un modelo para contextos largos
+                    </p>
+                </div>
+
+                <div class="limitations-grid">
+                    <div class="limitation-category">
+                        <div class="category-header">
+                            <i class="fas fa-file-export"></i>
+                            <h3>Limitaciones de Salida</h3>
+                        </div>
+                        <div class="limitation-items">
+                            <div class="limitation-item">
+                                <span class="model-name chatgpt">ChatGPT-4o</span>
+                                <span class="limitation-value">4,096 tokens</span>
+                                <span class="limitation-note">Independientemente del contexto de entrada</span>
+                            </div>
+                            <div class="limitation-item">
+                                <span class="model-name claude">Claude 4 Opus</span>
+                                <span class="limitation-value">32,000 tokens</span>
+                                <span class="limitation-note">Máximo de salida</span>
+                            </div>
+                            <div class="limitation-item">
+                                <span class="model-name gemini">Gemini 2.5 Pro</span>
+                                <span class="limitation-value">~65,000 tokens</span>
+                                <span class="limitation-note">De salida</span>
+                            </div>
+                            <div class="limitation-item">
+                                <span class="model-name grok">Grok 4</span>
+                                <span class="limitation-value">256,000 tokens</span>
+                                <span class="limitation-note">De salida (teórico)</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="limitation-category">
+                        <div class="category-header">
+                            <i class="fas fa-dollar-sign"></i>
+                            <h3>Costos de Procesamiento</h3>
+                        </div>
+                        <p class="cost-note">Los costos escalan exponencialmente con el tamaño del contexto. 
+                           Para los 7 PDFs estimados (224,000 tokens promedio):</p>
+                        
+                        <div class="cost-comparison">
+                            <div class="cost-item best-cost">
+                                <div class="cost-model">
+                                    <i class="fab fa-google"></i>
+                                    <span>Gemini 2.5 Pro</span>
+                                </div>
+                                <div class="cost-breakdown">
+                                    <span class="cost-input">~$2.24 entrada</span>
+                                    <span class="cost-output">~$10 salida</span>
+                                    <span class="cost-total">$12.24 total</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cost-item">
+                                <div class="cost-model">
+                                    <i class="fab fa-twitter"></i>
+                                    <span>Grok 4</span>
+                                </div>
+                                <div class="cost-breakdown">
+                                    <span class="cost-input">~$0.67 entrada</span>
+                                    <span class="cost-output">~$15 salida</span>
+                                    <span class="cost-total">$15.67 total</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cost-item">
+                                <div class="cost-model">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Claude 4 Sonnet</span>
+                                </div>
+                                <div class="cost-breakdown">
+                                    <span class="cost-input">~$0.67 entrada</span>
+                                    <span class="cost-output">~$15 salida</span>
+                                    <span class="cost-total">$15.67 total</span>
+                                </div>
+                            </div>
+                            
+                            <div class="cost-item high-cost">
+                                <div class="cost-model">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Claude 4 Opus</span>
+                                </div>
+                                <div class="cost-breakdown">
+                                    <span class="cost-input">~$3.36 entrada</span>
+                                    <span class="cost-output">~$75 salida</span>
+                                    <span class="cost-total">$78.36 total</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="limitation-category">
+                        <div class="category-header">
+                            <i class="fas fa-stopwatch"></i>
+                            <h3>Velocidad de Procesamiento</h3>
+                        </div>
+                        <p class="speed-note">Rankings por velocidad (tokens por segundo):</p>
+                        
+                        <div class="speed-ranking">
+                            <div class="speed-item rank-1">
+                                <span class="rank">1</span>
+                                <div class="speed-model">
+                                    <i class="fab fa-google"></i>
+                                    <span>Gemini 2.5 Pro</span>
+                                </div>
+                                <span class="speed-value">~191 tokens/sec</span>
+                            </div>
+                            
+                            <div class="speed-item rank-2">
+                                <span class="rank">2</span>
+                                <div class="speed-model">
+                                    <i class="fas fa-comments"></i>
+                                    <span>ChatGPT-4o</span>
+                                </div>
+                                <span class="speed-value">~143 tokens/sec</span>
+                            </div>
+                            
+                            <div class="speed-item rank-3">
+                                <span class="rank">3</span>
+                                <div class="speed-model">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Claude 4 Sonnet</span>
+                                </div>
+                                <span class="speed-value">~78 tokens/sec</span>
+                            </div>
+                            
+                            <div class="speed-item rank-4">
+                                <span class="rank">4</span>
+                                <div class="speed-model">
+                                    <i class="fas fa-robot"></i>
+                                    <span>Claude 4 Opus</span>
+                                </div>
+                                <span class="speed-value">~39 tokens/sec</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section id="recommendations" class="section section-dark">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Recomendaciones por Caso de Uso</h2>
+                    <p class="section-subtitle">
+                        Guía para elegir el modelo más adecuado según tus necesidades específicas
+                    </p>
+                </div>
+
+                <div class="recommendations-grid">
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3>Análisis de Documentos Extensos</h3>
+                        <p class="rec-subtitle">(>100K tokens)</p>
+                        <div class="rec-recommended">
+                            <i class="fab fa-google"></i>
+                            <span>Gemini 2.5 Pro</span>
+                            <div class="rec-badge">RECOMENDADO</div>
+                        </div>
+                        <p class="rec-reason">
+                            Por su capacidad de 1M tokens y precio competitivo, ideal para análisis 
+                            de documentos muy extensos como manuales técnicos o investigaciones largas.
+                        </p>
+                        <div class="rec-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Hasta 1,500 páginas</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Mejor precio por token</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3>Razonamiento Complejo Multi-turno</h3>
+                        <p class="rec-subtitle">Conversaciones prolongadas</p>
+                        <div class="rec-recommended">
+                            <i class="fas fa-robot"></i>
+                            <span>Claude 4 Opus/Sonnet</span>
+                            <div class="rec-badge">RECOMENDADO</div>
+                        </div>
+                        <p class="rec-reason">
+                            Por su arquitectura de razonamiento híbrido superior, mantiene mejor 
+                            coherencia en análisis complejos y conversaciones largas.
+                        </p>
+                        <div class="rec-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Coherencia superior</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Seguimiento lógico</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-wallet"></i>
+                        </div>
+                        <h3>Conversaciones Prolongadas</h3>
+                        <p class="rec-subtitle">Con presupuesto limitado</p>
+                        <div class="rec-recommended">
+                            <i class="fab fa-google"></i>
+                            <span>Gemini 2.5 Pro</span>
+                            <div class="rec-badge">RECOMENDADO</div>
+                        </div>
+                        <p class="rec-reason">
+                            Por el mejor ratio costo-beneficio, permitiendo sesiones largas 
+                            sin comprometer significativamente el presupuesto.
+                        </p>
+                        <div class="rec-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Menor costo total</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Gran capacidad</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="recommendation-card">
+                        <div class="rec-icon">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <h3>Desarrollo de Código</h3>
+                        <p class="rec-subtitle">Con contexto extenso</p>
+                        <div class="rec-recommended dual">
+                            <div class="rec-option">
+                                <i class="fas fa-robot"></i>
+                                <span>Claude 4</span>
+                                <small>Programación estructurada</small>
+                            </div>
+                            <div class="rec-separator">o</div>
+                            <div class="rec-option">
+                                <i class="fab fa-twitter"></i>
+                                <span>Grok 4</span>
+                                <small>Flujos autónomos</small>
+                            </div>
+                        </div>
+                        <p class="rec-reason">
+                            Claude 4 para desarrollo estructurado y análisis de código complejo. 
+                            Grok 4 para automatización y flujos de trabajo autónomos.
+                        </p>
+                        <div class="rec-features">
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Análisis de código</span>
+                            </div>
+                            <div class="feature">
+                                <i class="fas fa-check"></i>
+                                <span>Refactoring complejo</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="final-recommendation">
+                    <div class="final-rec-content">
+                        <i class="fas fa-lightbulb"></i>
+                        <div class="final-rec-text">
+                            <h3>Conclusión Clave</h3>
+                            <p>
+                                La elección del modelo debe basarse en el <strong>equilibrio específico</strong> 
+                                entre capacidad de contexto requerida, presupuesto disponible, y tipo de tarea a realizar. 
+                                Las ventanas de contexto más grandes no siempre garantizan mejor rendimiento si no se utilizan eficientemente.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <div class="footer-logo">
+                        <i class="fas fa-brain"></i>
+                        <span>IA Performance</span>
+                    </div>
+                    <p>Análisis comparativo de modelos de IA para contextos largos</p>
+                </div>
+                <div class="footer-links">
+                    <div class="link-group">
+                        <h4>Recursos</h4>
+                        <a href="#overview">Resumen</a>
+                        <a href="#performance">Rendimiento</a>
+                        <a href="#limitations">Limitaciones</a>
+                    </div>
+                    <div class="link-group">
+                        <h4>Modelos</h4>
+                        <a href="#gemini">Gemini 2.5 Pro</a>
+                        <a href="#claude">Claude 4</a>
+                        <a href="#grok">Grok 4</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 IA Performance Analysis. Diseñado para análisis técnico profesional.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

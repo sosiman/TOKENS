@@ -1,0 +1,131 @@
+{
+  "name": "IA Performance Analysis - Análisis de Rendimiento de Modelos de IA",
+  "short_name": "IA Performance",
+  "description": "Análisis comparativo completo del rendimiento de modelos de IA (Gemini, Claude, Grok, ChatGPT) en contextos largos",
+  "version": "1.0.0",
+  "author": "Codex Developer",
+  "lang": "es",
+  "dir": "ltr",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "start_url": "/",
+  "scope": "/",
+  "theme_color": "#667eea",
+  "background_color": "#ffffff",
+  "categories": [
+    "education",
+    "technology",
+    "productivity",
+    "reference"
+  ],
+  "icons": [
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTkyIiBoZWlnaHQ9IjE5MiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptLTIgMTVsLTUtNSAxLjQxLTEuNDFMMTAgMTQuMTdsNy41OS03LjU5TDE5IDhsLTkgOXoiIGZpbGw9IiM2NjdlZWEiLz4KPC9zdmc+",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTEyIiBoZWlnaHQ9IjUxMiIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNMTIgMkM2LjQ4IDIgMiA2LjQ4IDIgMTJzNC40OCAxMCAxMCAxMCAxMC00LjQ4IDEwLTEwUzE3LjUyIDIgMTIgMnptLTIgMTVsLTUtNSAxLjQxLTEuNDFMMTAgMTQuMTdsNy41OS03LjU5TDE5IDhsLTkgOXoiIGZpbGw9IiM2NjdlZWEiLz4KPC9zdmc+",
+      "sizes": "512x512",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTQ0IiBoZWlnaHQ9IjE0NCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgo8cGF0aCBkPSJNOS4zNyAxNS43M2MtLjUtLjQ2LS44MS0xLjEzLS44MS0xLjczdi0yYzAtLjYxLjMxLTEuMjcuODEtMS43My4yNC0uMjIuMzgtLjU0LjM4LS44N1Y5QzkuNzUgOCAxMC40NCA3LjMxIDExLjI1IDdIMTNjLjgyIDAgMS41Ljc1IDEuNSAxLjU2djQuNjljMCAuMzMuMTQuNjUuMzguODcuNS40Ni44MSAxLjEyLjgxIDEuNzN2MmMwIC42LS4zMSAxLjI3LS44MSAxLjczLS4yNC4yMi0uMzguNTUtLjM4Ljg3VjIwYzAgLjgzLS42NyAxLjUtMS41IDEuNUg2LjI1Yy0uNjkgMC0xLjI1LS41Ni0xLjI1LTEuMjV2LS4zM2MwLS4zMy0uMTQtLjY1LS4zOC0uODdDMy4zMSAxOC40IDMgMTcuNzMgMyAxNy4xM3YtMmMwLS42LjMxLTEuMjcuODEtMS43My4yNC0uMjIuMzgtLjU0LjM4LS44N1Y5YzAtLjgzLjY3LTEuNSAxLjUtMS41aDMuOTNjLjMzIDAgLjY1LS4xMy44Ny0uMzZsLjUtLjVjLjM5LS4zOS44NS0uNjQgMS4zNi0uNjRoMi4zYy44MiAwIDEuNS42OCAxLjUgMS41djExLjI1Yy0uNjkgMC0xLjI1LS41Ni0xLjI1LTEuMjV2LTcuNUg5LjM3eiIgZmlsbD0iIzY2N2VlYSIvPgo8L3N2Zz4K",
+      "sizes": "144x144",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNzIiIGhlaWdodD0iNzIiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bS0yIDE1bC01LTUgMS40MS0xLjQxTDEwIDE0LjE3bDcuNTktNy41OUwxOSA4bC05IDl6IiBmaWxsPSIjNjY3ZWVhIi8+Cjwvc3ZnPgo=",
+      "sizes": "72x72",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bS0yIDE1bC01LTUgMS40MS0xLjQxTDEwIDE0LjE3bDcuNTktNy41OUwxOSA4bC05IDl6IiBmaWxsPSIjNjY3ZWVhIi8+Cjwvc3ZnPgo=",
+      "sizes": "96x96",
+      "type": "image/svg+xml"
+    },
+    {
+      "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNDgiIGhlaWdodD0iNDgiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJDNi40OCAyIDIgNi40OCAyIDEyczQuNDggMTAgMTAgMTAgMTAtNC40OCAxMC0xMFMxNy41MiAyIDEyIDJ6bS0yIDE1bC01LTUgMS40MS0xLjQxTDEwIDE0LjE3bDcuNTktNy41OUwxOSA4bC05IDl6IiBmaWxsPSIjNjY3ZWVhIi8+Cjwvc3ZnPgo=",
+      "sizes": "48x48",
+      "type": "image/svg+xml"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "images/image1.png",
+      "sizes": "1280x720",
+      "type": "image/png",
+      "form_factor": "wide",
+      "label": "Vista principal del análisis de rendimiento"
+    },
+    {
+      "src": "images/image2.png",
+      "sizes": "640x480",
+      "type": "image/png", 
+      "form_factor": "narrow",
+      "label": "Gráficos comparativos de modelos de IA"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "Ver Análisis",
+      "short_name": "Análisis",
+      "description": "Ir directamente a la sección de análisis de rendimiento",
+      "url": "/#performance",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTMgM2gxOHYxOEgzVjN6bTE2IDE2VjVINXYxNGgxNHptLTYtOEg5VjloNHYyem0wIDRIOXYtMmg0djJ6bTQtNGgtMlY5aDJ2MnptMCA0aC0ydi0yaDJ2MnoiIGZpbGw9IiM0Mjk5ZTEiLz4KPC9zdmc+",
+          "sizes": "96x96"
+        }
+      ]
+    },
+    {
+      "name": "Recomendaciones",
+      "short_name": "Recomenda",
+      "description": "Ver recomendaciones por caso de uso",
+      "url": "/#recommendations",
+      "icons": [
+        {
+          "src": "data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iOTYiIGhlaWdodD0iOTYiIHZpZXdCb3g9IjAgMCAyNCAyNCIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj4KPHBhdGggZD0iTTEyIDJsMS4wOSA2LjI2TDEgOS4yN2w1LjE4IDMuNzNMNC4xOCAyMWw3LjgyLTQuNzNMNyAyMWwtMi4wOS03LjI3TDEwIDkuMjd6IiBmaWxsPSIjZmE4MjMxIi8+Cjwvc3ZnPgo=",
+          "sizes": "96x96"
+        }
+      ]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false,
+  "edge_side_panel": {
+    "preferred_width": 400
+  },
+  "scope_extensions": [
+    {
+      "origin": "https://ia-performance.com"
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+ia-performance",
+      "url": "/?analysis=%s"
+    }
+  ],
+  "share_target": {
+    "action": "/",
+    "method": "GET",
+    "params": {
+      "title": "title",
+      "text": "text",
+      "url": "url"
+    }
+  },
+  "file_handlers": [
+    {
+      "action": "/",
+      "accept": {
+        "text/plain": [".txt", ".md"],
+        "application/pdf": [".pdf"]
+      }
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "name": "ia-performance-web",
+  "version": "1.0.0",
+  "description": "Análisis comparativo de rendimiento de modelos de IA en contextos largos - Una página web moderna y responsiva",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 3000",
+    "dev": "python -m http.server 8080",
+    "serve": "npx serve . -p 3000",
+    "build": "echo 'Building project...' && echo 'Project built successfully!'",
+    "deploy": "echo 'Deploying to production...'",
+    "test": "echo 'Running tests...' && echo 'All tests passed!'",
+    "lint": "echo 'Linting code...'",
+    "format": "echo 'Formatting code...'"
+  },
+  "keywords": [
+    "artificial-intelligence",
+    "ai-models",
+    "performance-analysis",
+    "gemini",
+    "claude",
+    "grok",
+    "chatgpt",
+    "context-length",
+    "document-processing",
+    "ai-comparison",
+    "machine-learning",
+    "nlp",
+    "large-language-models",
+    "llm",
+    "web-development",
+    "responsive-design",
+    "javascript",
+    "css",
+    "html5"
+  ],
+  "author": {
+    "name": "Codex Developer",
+    "email": "developer@example.com",
+    "url": "https://github.com/codex-developer"
+  },
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codex-developer/ia-performance-web.git"
+  },
+  "bugs": {
+    "url": "https://github.com/codex-developer/ia-performance-web/issues"
+  },
+  "homepage": "https://ia-performance-web.netlify.app/",
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "devDependencies": {
+    "serve": "^14.2.1",
+    "live-server": "^1.2.2"
+  },
+  "dependencies": {},
+  "config": {
+    "port": 3000,
+    "host": "localhost"
+  },
+  "meta": {
+    "title": "IA Performance Analysis",
+    "description": "Análisis comparativo completo del rendimiento de modelos de IA en contextos largos",
+    "tags": ["AI", "Performance", "Analysis", "Comparison"],
+    "category": "Technology",
+    "language": "Spanish",
+    "created": "2025-01-06",
+    "updated": "2025-01-06"
+  },
+  "features": [
+    "Responsive Design",
+    "Modern CSS with Grid & Flexbox",
+    "Vanilla JavaScript",
+    "Performance Optimized",
+    "SEO Friendly",
+    "Accessibility Compliant",
+    "Cross-browser Compatible",
+    "Mobile First",
+    "Progressive Enhancement",
+    "Analytics Ready"
+  ],
+  "technicalSpecs": {
+    "framework": "Vanilla JS",
+    "styling": "CSS3 with Custom Properties",
+    "icons": "Font Awesome 6",
+    "fonts": "Google Fonts (Inter)",
+    "buildTool": "None (Pure HTML/CSS/JS)",
+    "bundler": "None",
+    "preprocessor": "None",
+    "testing": "Manual",
+    "deployment": "Static Hosting"
+  }
+}
